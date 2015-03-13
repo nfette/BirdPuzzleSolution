@@ -83,6 +83,10 @@ for seq1,rotseq1 in sixes:
             nines.append((seq, rotseq))
 print "{} tries, {} sequences of nine cards".format(tries,len(nines))
 
+# 32256 tries, 528 sequences of three cards
+# 96192 tries, 228 sequences of six cards
+# 97348 tries, 4 sequences of nine cards
+
 for card, rotcard in zip(*nines[0]):
     d = deque(cards[card])
     d.rotate(rotcard)
